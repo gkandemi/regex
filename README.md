@@ -78,7 +78,7 @@ Al**oooo** burada ne **o**luy**or** acaba?
 
 ifadelerini dönecektir. Çünkü burada **\*** karakterinin özelliğinden dolayı **r** opsiyonel olarak konumlandırılır. Eğer varsa da **o** ve **r** birleşimi olarak ele alacaktır.
 
-### . (nokta) Notasyonu
+### \. (nokta) Notasyonu
 öncesindeki ya da sonrasindaki yeni satır hariç herhangi bir karakteri temsil eder.
 
 ```
