@@ -1,4 +1,10 @@
-Regex bize herşeyden önce bir karakter seçim izni verir. Bu karakter veya karakter grubu tamamen sizin bakış açınıza göre değişir.
+![Tux, the Linux mascot](./düzenli-ifadeler-regular-expressions-regex-nedir-nasil-kullanilir-javascript-ile-regex-kullanimi-kablosuzkedi-youtube-kanali.png)
+
+Bu doküman [Kablosuzkedi](https://www.youtube.com/kablosuzkedii) Youtube kanalı için hazırlanmıştır. İsterseniz aşağıdaki linkten dersi izleyebilirsiniz :)
+
+[Düzenli ifadeler (Regular Expressions | #Regex) Nedir? Nasıl Kullanılır? #JavaScript ile Regex](https://youtu.be/bF_zEzFQZuA)
+
+Eveeett, geldik malum konuya. Regex bize herşeyden önce bir karakter seçim izni verir. Bu karakter veya karakter grubu tamamen sizin bakış açınıza göre değişir.
 
 # Flags
 
@@ -619,3 +625,5 @@ const str = `Regex için video hazırlıyorum. #Regex ile çözümlemek için Ba
 
 str.match(regex).forEach(h => console.log(h));
 ```
+
+Son olarak isterseniz bu [link üzerinden](https://cs.lmu.edu/~ray/notes/regex/) Regex örneklerini inceleyerek kendinizi test edebilirsiniz. Oldukça faydalı olduğunu söyleyebilirim :)
