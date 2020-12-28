@@ -1,4 +1,6 @@
-![Tux, the Linux mascot](./düzenli-ifadeler-regular-expressions-regex-nedir-nasil-kullanilir-javascript-ile-regex-kullanimi-kablosuzkedi-youtube-kanali.png)
+#Regular Expressions | Regex | Düzenli İfadeler
+
+![Düzenli ifadeler (Regular Expressions | #Regex) Nedir? Nasıl Kullanılır? #JavaScript ile Regex](/düzenli-ifadeler-regular-expressions-regex-nedir-nasil-kullanilir-javascript-ile-regex-kullanimi-kablosuzkedi-youtube-kanali.png)
 
 Bu doküman [Kablosuzkedi](https://www.youtube.com/kablosuzkedii) Youtube kanalı için hazırlanmıştır. İsterseniz aşağıdaki linkten dersi izleyebilirsiniz :)
 
@@ -6,7 +8,7 @@ Bu doküman [Kablosuzkedi](https://www.youtube.com/kablosuzkedii) Youtube kanal�
 
 Eveeett, geldik malum konuya. Regex bize herşeyden önce bir karakter seçim izni verir. Bu karakter veya karakter grubu tamamen sizin bakış açınıza göre değişir.
 
-#Flags
+## Flags
 
 ```
 /g match All
@@ -15,9 +17,9 @@ Eveeett, geldik malum konuya. Regex bize herşeyden önce bir karakter seçim iz
 /u unicode
 ```
 
-#Nicelikler / Notasyonlar
+## Nicelikler / Notasyonlar
 
-## + (one or more)
+### + (one or more)
 Bir tane veya şarta uyan birden fazla karakteri tek bir ifade olarak seçer.
 
 ```
@@ -36,7 +38,7 @@ Al**oooo** burada ne **o**luyor acaba?
 
 ifadelerini dönecektir.
 
-##? Opsiyonel karakter
+### ? Opsiyonel karakter
 
 Opsiyonel olan karakterleri işaretlememiz için kullanılır
 
@@ -56,7 +58,7 @@ Al**oooo** burada ne **o**luy**or** acaba?
 
 ifadelerini dönecektir. Burada **o+** dediğimiz için **oooo** olarak bize eşleşmenin tamamını verdi.
 
-##\* (zero or more) | ? ve + Birleşimi
+### \* (zero or more) | ? ve + Birleşimi
 
 **\+** ve **?** birleşimidir. Opsiyonel olarak mümkün olan eşlesmeyi yine birleşim olarak alir.
 
@@ -76,7 +78,7 @@ Al**oooo** burada ne **o**luy**or** acaba?
 
 ifadelerini dönecektir. Çünkü burada **\*** karakterinin özelliğinden dolayı **r** opsiyonel olarak konumlandırılır. Eğer varsa da **o** ve **r** birleşimi olarak ele alacaktır.
 
-## .
+### . (nokta) Notasyonu
 öncesindeki ya da sonrasindaki yeni satır hariç herhangi bir karakteri temsil eder.
 
 ```
@@ -110,32 +112,33 @@ ifadesini geri dönecektir.
 
 **\\.** ile escape yaparak nokta karakterini arayabiliriz.
 
-#\w
+### \w
 
 Boşluk olmayan tüm karakterleri teker teker seçer.
 
-#\W negatif versiyon (\w)
+### \W negatif versiyon (\w)
 
 \w' nin tersidir. Sadece boşlukları teker teker seçer.
 
-#\s
+### \s
 
 Boşlukları seçerl
 
-#\S Negatif versiyon (\s)
+### \S Negatif versiyon (\s)
 
 \s' in tersidir. Boşluklar harici tüm karakterleri teker teker seçer.
 
-#\d Sayılar
+### \d Sayılar
 
 Sayıları seçer
 
-#\D Sayı olmayanlar
+### \D Sayı olmayanlar
 
 Sayı olmayan karakterleri seçer.
 
-#Aralık belirleme
-## \{x,y}
+## Aralık belirleme
+
+### \{x,y}
 **x** karakterden oluşan bir kelime grubu seçer.
 **y** belirtilmek zorunda değildir. eğer belirtilmezse x ve daha fazlasi olarak yorumlanır
 
@@ -145,7 +148,7 @@ Sayı olmayan karakterleri seçer.
 
 4 karakterden fazla olan kelimeleri sec.
 
-# Karakter Gruplama [fc]at
+## Karakter Gruplama [fc]at
 Başı f **ya da** c ile başlayan **"at"** ile biten kelimeler.
 Aynı zamanda karakter gruplamayı bir aralık belirleme için de kullanabiliyoruz. Mesela **a** ile **z** arasındaki tüm karakterler gibi.
 
@@ -157,7 +160,7 @@ fat cat hat tat nat Fat Cat 4at 5at
 [a-tA-T0-5]at
 ```
 
-## Aralık Belirleme
+### Aralık Belirleme
 
 ```
 [a-z] [A-Z] [a-zA-Z] [0-9] [a-f]
@@ -169,7 +172,7 @@ gibi..
 [a-zA-Z]at
 ```
 
-# Gruplama İşlemi (...)
+## Gruplama İşlemi (...)
 
 Sadece 1 karakter degil birden fazla karakteri grup şeklinde almayi saglar
 (t|T)he başındaki karakter t ya da T olabilir sonu he ile biter..
@@ -202,7 +205,7 @@ içerisinde en az 2 en cok 3 "re" olan kelime gruplarini sec
 rere gibi ya da rerere
 ```
 
-## ^ Satır başındaki karakteri belirleme
+### ^ Satır başındaki karakteri belirleme
 
 ```
 Sokakta yalnız yürüyorum.
@@ -215,7 +218,7 @@ sokak bunun farkında bile değil.
 
 satır başı T veya t ile başlayan he ile biten karakter gruplarını seç!
 
-## \$ Satır sonundaki karakteri belirleme
+### \$ Satır sonundaki karakteri belirleme
 
 ```
 \.$
@@ -223,7 +226,7 @@ satır başı T veya t ile başlayan he ile biten karakter gruplarını seç!
 
 sonu nokta ile biten ifadeler.
 
-# Lookahead
+## Lookahead
 
 Belirlediğimiz karakter ya da karakter gruplarıyla **devam eden** yada **devam etmeyen** ifadeleri seçmemizi sağlar
 
@@ -233,7 +236,7 @@ ifade(lookahead)
 
 şeklinde düşünülebilir. 2 farklı yöntemi vardır.
 
-## Pozitif Lookahead | Seç - ?=
+### Pozitif Lookahead | Seç - ?=
 
 Negatif Lookahed'in tam tersidir. Belirlediğimiz karakter ile devam **eden** ifadeleri seçer. Mesela q ile başlayıp u ile devam **etmeyen** bir ifadeyi seçmek istersek
 
@@ -271,7 +274,7 @@ bu ifade bize **f** ve **c** karakterlerini verir. Çünkü cümle içerisinde *
 
 burada f ve c yi alır.
 
-## Negatif Lookahead | Seçme - ?!
+### Negatif Lookahead | Seçme - ?!
 
 Belirlediğimiz karakter ile devam etmeyen ifadeleri seçer. Mesela q ile başlayıp u ile devam etmeyen bir ifadeyi seçmek istersek
 
@@ -313,7 +316,7 @@ kelimesinden at ile **devam etmeyen** tüm karakterleri seç demek istersen
 
 burada **f** ve **c** hariç hepsini **teker teker seçer** çünkü seçici olarak (.) nokta kullanılmıştır.
 
-# Look Behind
+## Look Behind
 
 Öncesinde belirlediğimiz karakter ya da karakter gruplarıyla **devam eden** yada **devam etmeyen** ifadeleri seçmemizi sağlar
 
@@ -321,7 +324,7 @@ burada **f** ve **c** hariç hepsini **teker teker seçer** çünkü seçici ola
 (lookabehind)ifade
 ```
 
-## Pozitif Look Behind | Seç - ?<=
+### Pozitif Look Behind | Seç - ?<=
 
 Seçeceğimiz ifadelerin **öncesindeki** karakter ve karakter grubunun **olup olmamasını** kontrol eder. Böylece öncesinde **şu varsa bunu seç** gibi bir seçim yapma durumuna imkan verir.
 
@@ -353,7 +356,7 @@ cümlesinde almak istediğimiz kelimeler **punisher** ve **man** kelimeleri olsa
 
 ifadesi bizim için yeterli olacaktır. Çünkü The ya da the bizim seçmek istediğimiz iki farklı kelime olduğu için burada T veya t opsiyonel olmalıdır. Bu ifade bize şunu **punisher** ve **man** kelimelerini verecektir.
 
-## Negatif Look Behind | Seçme - <?!
+### Negatif Look Behind | Seçme - <?!
 
 Pozitif look behind'ın tam tersidir. Pozitif look behind **seçim yaparken**, negatif içe öncesindeki karakter veya karakter grubunun olması durumunda devam eden ifadeyi **seçmez**.
 
@@ -389,9 +392,9 @@ ifadesi bizim için yeterli olacaktır. Çünkü The ya da the bizim seçmek ist
 
 ifadesini verir. Çünkü The veya the ile devam eden karakterler **p** ve **m** karakterleri. Bu karakterler haricindekilerin tamamını seçecektir.
 
-# Örnekler
+## Örnekler
 
-## Telefon Numarası Seçmek
+### Telefon Numarası Seçmek
 
 ```
 1234567890
@@ -439,7 +442,7 @@ ifadesini verir. Çünkü The veya the ile devam eden karakterler **p** ve **m**
 (?<areaCode>\+\d{2})?[ ]?\(?(?<operator>\d{3})\)?[ -]?(?<main>\d{3})[ -]?(?<number>\d{4})
 ```
 
-## Tarih Validasyonu
+### Tarih Validasyonu
 
 ```
 14/02/2018
@@ -458,6 +461,8 @@ ifadesini verir. Çünkü The veya the ile devam eden karakterler **p** ve **m**
 (?<day>\d{2})[\/\-\.](?<month>\d{2})[\/\-\.](?<year>\d{2,4})
 ```
 
+##### ÖDEV
+
 ```
 2018/02/14
 2018-02-14
@@ -465,11 +470,7 @@ ifadesini verir. Çünkü The veya the ile devam eden karakterler **p** ve **m**
 18.02.14
 ```
 
-```
-(?<gun>\d{2})[\/\-\.](?<ay>\d{2})[\/\-\.](?<yil>\d{2,4})
-```
-
-## [url~title] içerisinden bilgileri almak
+### [url~title] içerisinden bilgileri almak
 
 ```
 [https://www.videosinif.com~videosinif]
@@ -505,7 +506,7 @@ title bilgisini de gruplayarak alabiliriz.
 (?<url>(?<=\[)(.*)(?=[~,\|]))[~|,|\|](?<title>(?<=[~|,|\|])(.*)(?=\]))?
 ```
 
-Video içerisinde yapılan
+**Video içerisinde yapılan**
 
 ```
 (?<=\[)(?<url>.*)(?=[~,\|])[~,\|](?<=[~,\|])(?<title>.*)(?=\])
@@ -513,7 +514,7 @@ Video içerisinde yapılan
 
 Bu iki ifadenin de ayni gruplarda toplanabilmesi için araya ~ ekleyerek tüm ifadeyi seçtiriyoruz.
 
-## Key: value Çiftini almak
+### Key: value Çiftini almak
 
 ```
 Name: Gokhan
@@ -527,7 +528,7 @@ Married: Yes
 (?<fieldName>^[a-zA-Z]+): (?<value>[a-zA-Z0-9]+)
 ```
 
-## Web Sayfasından linkleri almak
+### Web Sayfasından linkleri almak
 
 ```
 <a(\s+)href="(?<url>([^"]*))"
@@ -539,13 +540,13 @@ Married: Yes
 
 [^'] => ' olmayan tüm karakterleri seç
 
-## \<body>...\</body> içerisindeki içeriği almak.
+### \<body>...\</body> içerisindeki içeriği almak.
 
 ```
 <body[^>]*>([\w|\W]*)<\/body>
 ```
 
-## Email Validasyonu
+### Email Validasyonu
 
 ```
 gokhan@gkandemir.com adresinden güzel bir email aldim. peki bu .com uzantılı email adreslerinden çektiğimiz nedir be kardeşim. onunla beraber delphixdfd@gmail.com diye ayri bir ergen zamanlarimda aldigim email adresi de mevcut :D
@@ -561,7 +562,7 @@ gokhan@gkandemir.com adresinden güzel bir email aldim. peki bu .com uzantılı 
 \w+@\w+\.[a-zA-Z]{2,}
 ```
 
-## URL Validasyonu
+### URL Validasyonu
 
 ```
 burada bir ton web sayfası var. https://www.google.com bunlardan bir tanesi. Neden olduğunu bilmiyorum ama http://www.test123.space de bunlardan bir tanesi. Oldukça güzel bir web sayfası daha var burada www.kablosuzkedi.com uzun zamandan beri güncellenmemiş fakat yine de bilgiler işe yarayabilir. Fakat video izlemek isterseniz youtube.com da buna uyan diğer bir güzel web sayfası
@@ -577,7 +578,7 @@ burada bir ton web sayfası var. https://www.google.com bunlardan bir tanesi. Ne
 (https?:\/\/)?(www\.)?([a-zA-Z0-9]+)(\.[a-zA-Z]{2,})
 ```
 
-## Hashtag Ayıklamak
+### Hashtag Ayıklamak
 
 ```
 Regex için video hazırlıyorum. #Regex ile çözümlemek için Bana uğraştığınız merak ettiğiniz metinleri yazabilir misiniz? Mesela #Web sayfasındaki <body></body> #tag 'leri arasındaki bilgileri almak gibi. Bu #kolay tabi :) #Derdımianlatabilmişimdirumarim :) #360dayscleancode
@@ -587,7 +588,7 @@ Regex için video hazırlıyorum. #Regex ile çözümlemek için Bana uğraştı
 #[a-zA-Z0-9işüğçöı]+
 ```
 
-## Youtube, Vimeo, İzlesene Video URL Ayıklama
+### Youtube, Vimeo, İzlesene Video URL Ayıklama
 
 ```
 data-config-url="https://player.vimeo.com/video/488734703/config?autopause=1&amp;autoplay=1&amp;byline=0&amp;collections=1&amp;context=Vimeo%5CController%5CClipController.main&amp;default_to_hd=1&amp;outro=nothing&amp;portrait=0&amp;share=1&amp;title=0&amp;watch_trailer=0&amp;s=8be48fe12cfacadb79085e9c2acbd6568c1fb641_1609112069" data-fallback-url="//player.vimeo.com/video/488734703/fallback?js"
@@ -601,9 +602,9 @@ Pentagram'ın güzel bir şarkısı güzel bir şarkı gibi sanki ama eski tadı
 (https:\/\/)(www\.)?(?<vimeo>(player\.vimeo\.com\/video\/[0-9]+\/)?)(?<youtube>youtube\.com\/watch\?v=[a-zA-Z0-9]+)?(?<izlesene>(izlesene\.com\/video\/[a-zA-Z0-9\/-]+))?
 ```
 
-# JavaScipt ile Yaptığımız Kodlar
+## JavaScipt ile Yaptığımız Kodlar
 
-### JavaScript ile E-mail Validasyonu
+#### JavaScript ile E-mail Validasyonu
 
 ```
 const email_regex = /\w+@\w+\.[a-zA-Z]{2,}/g;
@@ -614,7 +615,7 @@ if (email_regex.test("gokhan@gkandemir.com")) {
 }
 ```
 
-### JavaScript ile Hashtag Listesini Almak
+#### JavaScript ile Hashtag Listesini Almak
 
 ```
 const regex = /#[a-zA-Z0-9şığüçö]+/gm;
