@@ -1,4 +1,4 @@
-#Regular Expressions | Regex | Düzenli İfadeler
+# Regular Expressions | Regex | Düzenli İfadeler
 
 ![Düzenli ifadeler (Regular Expressions | #Regex) Nedir? Nasıl Kullanılır? #JavaScript ile Regex](https://i.ytimg.com/vi/bF_zEzFQZuA/maxresdefault.jpg?v=5fea5ba1)
 
