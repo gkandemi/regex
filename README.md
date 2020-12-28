@@ -1,6 +1,6 @@
 #Regular Expressions | Regex | Düzenli İfadeler
 
-![Düzenli ifadeler (Regular Expressions | #Regex) Nedir? Nasıl Kullanılır? #JavaScript ile Regex](/düzenli-ifadeler-regular-expressions-regex-nedir-nasil-kullanilir-javascript-ile-regex-kullanimi-kablosuzkedi-youtube-kanali.png)
+![Düzenli ifadeler (Regular Expressions | #Regex) Nedir? Nasıl Kullanılır? #JavaScript ile Regex](https://i.ytimg.com/vi/bF_zEzFQZuA/maxresdefault.jpg?v=5fea5ba1)
 
 Bu doküman [Kablosuzkedi](https://www.youtube.com/kablosuzkedii) Youtube kanalı için hazırlanmıştır. İsterseniz aşağıdaki linkten dersi izleyebilirsiniz :)
 
