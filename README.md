@@ -6,7 +6,7 @@ Bu doküman [Kablosuzkedi](https://www.youtube.com/kablosuzkedii) Youtube kanal�
 
 Eveeett, geldik malum konuya. Regex bize herşeyden önce bir karakter seçim izni verir. Bu karakter veya karakter grubu tamamen sizin bakış açınıza göre değişir.
 
-# Flags
+#Flags
 
 ```
 /g match All
@@ -15,7 +15,7 @@ Eveeett, geldik malum konuya. Regex bize herşeyden önce bir karakter seçim iz
 /u unicode
 ```
 
-# Nicelikler / Notasyonlar
+#Nicelikler / Notasyonlar
 
 ## + (one or more)
 Bir tane veya şarta uyan birden fazla karakteri tek bir ifade olarak seçer.
@@ -36,7 +36,7 @@ Al**oooo** burada ne **o**luyor acaba?
 
 ifadelerini dönecektir.
 
-## ? Opsiyonel karakter
+##? Opsiyonel karakter
 
 Opsiyonel olan karakterleri işaretlememiz için kullanılır
 
@@ -56,7 +56,7 @@ Al**oooo** burada ne **o**luy**or** acaba?
 
 ifadelerini dönecektir. Burada **o+** dediğimiz için **oooo** olarak bize eşleşmenin tamamını verdi.
 
-## \* (zero or more) | ? ve + Birleşimi
+##\* (zero or more) | ? ve + Birleşimi
 
 **\+** ve **?** birleşimidir. Opsiyonel olarak mümkün olan eşlesmeyi yine birleşim olarak alir.
 
@@ -110,31 +110,31 @@ ifadesini geri dönecektir.
 
 **\\.** ile escape yaparak nokta karakterini arayabiliriz.
 
-# \w
+#\w
 
 Boşluk olmayan tüm karakterleri teker teker seçer.
 
-# \W negatif versiyon (\w)
+#\W negatif versiyon (\w)
 
 \w' nin tersidir. Sadece boşlukları teker teker seçer.
 
-# \s
+#\s
 
 Boşlukları seçerl
 
-# \S Negatif versiyon (\s)
+#\S Negatif versiyon (\s)
 
 \s' in tersidir. Boşluklar harici tüm karakterleri teker teker seçer.
 
-# \d Sayılar
+#\d Sayılar
 
 Sayıları seçer
 
-# \D Sayı olmayanlar
+#\D Sayı olmayanlar
 
-Sayıları seçer
+Sayı olmayan karakterleri seçer.
 
-# Aralık belirleme
+#Aralık belirleme
 ## \{x,y}
 **x** karakterden oluşan bir kelime grubu seçer.
 **y** belirtilmek zorunda değildir. eğer belirtilmezse x ve daha fazlasi olarak yorumlanır
