@@ -238,7 +238,7 @@ ifade(lookahead)
 
 ### Pozitif Lookahead | Seç - ?=
 
-Negatif Lookahed'in tam tersidir. Belirlediğimiz karakter ile devam **eden** ifadeleri seçer. Mesela q ile başlayıp u ile devam **etmeyen** bir ifadeyi seçmek istersek
+Negatif Lookahed'in tam tersidir. Belirlediğimiz karakter ile devam **eden** ifadeleri seçer. Mesela q ile başlayıp u ile devam **eden** bir ifadeyi seçmek istersek
 
 ```
 quantity and qrcode is really useful
